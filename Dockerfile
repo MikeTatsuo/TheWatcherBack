@@ -1,4 +1,4 @@
-FROM node:14-slim
+FROM node:16-slim
 RUN mkdir -p /usr/src/api
 WORKDIR /usr/src/api
 COPY . .
