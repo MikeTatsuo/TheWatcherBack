@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+STATUS=`git status`
+SYNCHED=`echo $STATUS | grep 'up to date' | awk '{print $8}'`
+BRANCH=`echo $STATUS | grep On | awk '{print $3}'`
+
+if [ -z $SYNCHED ]; then
+	git push -u origin "$BRANCH" --no-verify
+fi

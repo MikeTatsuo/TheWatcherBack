@@ -1,0 +1,3 @@
+services:
+  api:
+    network_mode: 'host'

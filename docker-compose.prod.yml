@@ -1,0 +1,12 @@
+# TODO: Needs to be configure
+version: '3'
+services:
+  api:
+    networks:
+      - backend
+    ports:
+      - '3000:3000'
+
+networks:
+  backend:
+    driver: bridge

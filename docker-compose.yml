@@ -1,0 +1,7 @@
+version: '3'
+services:
+  api:
+    command: npm start
+    build: .
+    volumes:
+      - ./api:/api

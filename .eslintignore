@@ -1,0 +1,6 @@
+coverage
+dist
+node_modules
+temp
+
+.nyc_output
